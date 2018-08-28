@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> 
+
+        <!---  charset lets browser know how to render characters  -->
+        <meta charset="utf-8">
+
+        <title> Some website </title>
+
+    </head>
+
+
+    <body>
+
+        {{> header}}
+
+       <!--- insert JSON from .js file: <p> {{welcomeMessage}} </p> -->
+
+       <p>{{screamIt welcomeMessage}}</p>
+        <p> Some text here.</p>
+
+    <!--- insert hbs partial file using the following format -->
+       {{> footer}}
+
+    </body>
+
+
+
+</html>

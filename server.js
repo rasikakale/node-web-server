@@ -3,6 +3,9 @@ const hbs = require('hbs');
 
 const fs = require('fs');
 
+//process.env - stores environ. vars as key/val pairs
+const port = process.env.PORT || 3000; 
+
 var app = express();
 
 //takes dir to use for hbs partial files, and specifying dir as first and only one arg
@@ -117,6 +120,12 @@ app.get('/bad', (req, res) => {
 
 //.listen() binds application to port on machine (shows up on web server)
 // takes opt second argument to do something if server takes a while
+/*
 app.listen(3000, () => {
     console.log('Server is up on port 3000.');
+});
+*/
+
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}.`);
 });

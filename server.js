@@ -127,12 +127,12 @@ app.get('/projects', (req, res) => {
 //.listen() binds application to port on machine (shows up on web server)
 // takes opt second argument to do something if server takes a while
 
+/*
 app.listen(3000, () => {
     console.log('Server is up on port 3000.');
 });
+*/
 
-/*
 app.listen(port, () => {
     console.log(`Server is up on port ${port}.`);
 });
-*/
